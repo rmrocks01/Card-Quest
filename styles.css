@@ -46,6 +46,7 @@ textarea {
     min-width: 33%;
     flex-grow: 4;
     resize: none;
+    padding: 10px;
 }
 
 #filter-div {
