@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Asap, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #242424, #181818);
+    color: #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    background-color: #444;
+    min-width: 75%;
+    width: fit-content;
+    align-self: center;
+    display: flex;
+}
+
+textarea {
+    min-width: 33%;
+    flex-grow: 4;
+    resize: none;
+}
+
+#filter-div {
+    padding: 10px;
+    flex-grow: 2;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+
+#decklist-submit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background-color 0.3s;
+}
+
+#decklist-submit:hover {
+    background-color: #45a049;
+}
+
+#loading-indicator {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#error-container {
+    color: red;
+    margin-top: 10px;
+}
+
+#results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    display: inline-block;
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.collapsable {
+    margin-bottom: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.collapsable-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 50%;
+    align-self: center;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.collapsable-button.active {
+    background-color: #666;
+}
+
+.collapsable-button:hover {
+    background-color: #444;
+}
+
+.collapsable span {
+    position: absolute;
+    text-align: right;
+    margin-left: -35px;
+    margin-top: 20px;
+}
+
+.collapsable-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

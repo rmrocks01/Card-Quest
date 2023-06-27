@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card Quest!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+</head>
+<header>
+    <h1>Card Quest!</h1>
+</header>
+
+<body>
+    <h2>Paste a decklist to get started.</h2>
+    <form id="decklist-form">
+        <textarea id="decklist-input"></textarea>
+        <div id="filter-div">
+            <p>Filter by Set Type:</p>
+            <select id="set-type-filter" class="selectpicker" multiple data-live-search="true">
+                <option value="core" selected>Core</option>
+                <option value="expansion" selected>Expansion</option>
+                <option value="masters" selected>Masters</option>
+                <option value="alchemy">Alchemy</option>
+                <option value="masterpiece">Masterpiece</option>
+                <option value="arsenal">Arsenal</option>
+                <option value="from_the_vault">From the Vault</option>
+                <option value="spellbook">Spellbook</option>
+                <option value="premium_deck">Premium Deck</option>
+                <option value="duel_deck">Duel Deck</option>
+                <option value="draft_innovation">Draft Innovation</option>
+                <option value="treasure_chest">Treasure Chest</option>
+                <option value="commander">Commander</option>
+                <option value="planechase">Planechase</option>
+                <option value="archenemy">Archenemy</option>
+                <option value="vanguard">Vanguard</option>
+                <option value="funny">Funny</option>
+                <option value="starter">Starter</option>
+                <option value="box">Box</option>
+                <option value="promo">Promo</option>
+                <option value="token">Token</option>
+                <option value="memorabilia">Memorabilia</option>
+                <option value="minigame">Minigame</option>
+            </select>
+            <hr>
+            <p>Filter by Rarity:</p>
+            <select id="rarity-filter" class="selectpicker" multiple data-live-search="true">
+                <option value="common" selected>Common</option>
+                <option value="uncommon" selected>Uncommon</option>
+                <option value="rare" selected>Rare</option>
+                <option value="special" selected>Special</option>
+                <option value="mythic" selected>Mythic</option>
+                <option value="bonus" selected>Bonus</option>
+            </select>
+        </div>
+        <input id="decklist-submit" type="submit">
+    </form>
+    <p id="loading-indicator"></p>
+    <div id="error-container"></div>
+    <div id="results-container"></div>
+</body>
+<footer>
+    <p>Portions of Card Quest are unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy.
+        The literal and graphical information presented on this site about Magic: The Gathering, including card images,
+        mana symbols, and Oracle text, is copyright Wizards of the Coast, LLC, a subsidiary of Hasbro, Inc. Card Quest
+        is not produced by or endorsed by Wizards of the Coast. </p>
+    <a href="https://scryfall.com">Powered by Scryfall</a>
+</footer>
+<script src="app.js"></script>
+
+</html>
